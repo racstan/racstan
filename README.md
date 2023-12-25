@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="150" src="https://ibb.co/Dgc4Wqw"  />
+  <img height="150" src="https://i.postimg.cc/xd3B1m75/github-image.gif"  />
 </div>
 
 ###
@@ -76,6 +76,15 @@
 ###
 
 <h3 align="left">🔥   My Stats :</h3>
+
+###
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=racstan&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+  <img src="https://streak-stats.demolab.com?user=racstan&locale=en&mode=daily&theme=default&hide_border=false&border_radius=5&order=3" height="220" alt="streak graph"  />
+</div>
+
+###
 
 ###
 
