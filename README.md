@@ -1,15 +1,24 @@
 <h1 align="center">Hi, I'm Racstan 👋</h1>
 
 <p align="center">
-  <b>Full-stack developer building desktop, mobile, and AI tooling that people actually use.</b><br>
-  <sub>Shipped software to the KDE Store · 60+ public repositories · actively building in public</sub>
+  <b>AI Engineer.</b> I design and ship intelligent systems — from sub-15ms inference engines and
+  computer-vision pipelines to the desktop and mobile apps that put them in front of real users.
 </p>
 
 <p align="center">
-  <a href="https://kdeplasma.org"><img src="https://img.shields.io/badge/KDE_Plasma_6-1c4f80?style=flat-square&logo=kde&logoColor=white" alt="KDE Plasma 6"></a>
-  <a href="https://www.jetbrains.com/languages/"><img src="https://img.shields.io/badge/Kotlin-7f52ff?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin"></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <sub>
+    <b>What I work with:</b> deep learning &amp; model inference · speech &amp; vision · LLM orchestration ·
+    local-first AI · systems engineering<br>
+    <b>What I ship with:</b> desktop &amp; mobile apps · backend services · developer tooling
+  </sub>
+</p>
+
+<p align="center">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://www.tensorflow.org/"><img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow"></a>
+  <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"></a>
+  <a href="https://kdeplasma.org"><img src="https://img.shields.io/badge/KDE_Plasma_6-1c4f80?style=flat-square&logo=kde&logoColor=white" alt="KDE Plasma 6"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></a>
 </p>
 
 <p align="center">
@@ -17,6 +26,25 @@
   <a href="https://github.com/racstan"><img src="https://img.shields.io/badge/followers-4-007ec6?style=flat-square" alt="Followers"></a>
   <a href="https://github.com/racstan"><img src="https://img.shields.io/badge/KDE_Store-publisher-1c71d8?style=flat-square&logo=kde&logoColor=white" alt="KDE Store publisher"></a>
 </p>
+
+---
+
+## 🧠 What I actually do
+
+**Machine learning & inference**
+- Custom inference architectures — my `hastejev` engine does permutation-invariant, calibrated inference in **under 15ms**, without a transformer in the loop
+- Speech pipelines: Whisper + Kokoro with GPU/CUDA acceleration
+- Computer vision with OpenCV; deep learning in TensorFlow, PyTorch, and Keras
+
+**AI systems & tooling**
+- Local-first inference — running Whisper, Kokoro, and LLMs fully offline via Ollama, llama.cpp, and NVIDIA NIM
+- LLM orchestration: background agents, autonomous schedulers, persistent memory, and context synthesis
+- Developer tooling for AI coding agents (OpenCode integrations, bridges, and CLIs)
+
+**Shipping it to people**
+- Native desktop apps in QML/Qt on KDE Plasma — one shipped to the official **KDE Store**
+- Android (Kotlin), TypeScript backends, and local-first web apps
+- Self-hosting, Docker, CI/CD, and GitHub automation
 
 ---
 
@@ -66,17 +94,58 @@ The most technically distinctive thing I've built — a **non-generative** infer
 
 ---
 
-## 🧰 Stack
+## 🧰 Stack & Tools
 
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | TypeScript · JavaScript · Python · Kotlin · C++ · C · QML · PHP · R · MATLAB |
-| **Frontend** | React · Next.js · Svelte · Tailwind · shadcn/ui · Inertia.js |
-| **Backend** | Node.js · Express · Laravel · REST · SQLite |
-| **Desktop** | QML · KDE Plasma 6 · Qt |
-| **AI / ML** | TensorFlow · OpenCV · Whisper · Kokoro · Ollama · llama.cpp · NVIDIA NIM |
-| **Cloud & DevOps** | Docker · Google Cloud · Firebase · GitHub Actions |
-| **Data** | Jupyter · Pandas · NumPy · AMPL |
+### 🤖 AI & Machine Learning
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="38" alt="TensorFlow logo" title="TensorFlow">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="38" alt="Python logo" title="Python">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="38" alt="PyTorch logo" title="PyTorch">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" height="38" alt="OpenCV logo" title="OpenCV">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" height="38" alt="scikit-learn logo" title="scikit-learn">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" height="38" alt="Keras logo" title="Keras">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="38" alt="NumPy logo" title="NumPy">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="38" alt="Pandas logo" title="Pandas">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" height="38" alt="Matplotlib logo" title="Matplotlib">
+
+<sub>Also: Whisper · Kokoro · Ollama · llama.cpp · NVIDIA NIM · CUDA · shadcn/ui · Inertia.js</sub>
+
+### 💻 Languages
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="38" alt="TypeScript logo" title="TypeScript">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="38" alt="JavaScript logo" title="JavaScript">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" height="38" alt="Kotlin logo" title="Kotlin">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="38" alt="C++ logo" title="C++">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="38" alt="C logo" title="C">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="38" alt="PHP logo" title="PHP">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" height="38" alt="R logo" title="R">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height="38" alt="MATLAB logo" title="MATLAB">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="38" alt="Jupyter logo" title="Jupyter">
+
+### 🎨 Frontend
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="38" alt="React logo" title="React">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="38" alt="Next.js logo" title="Next.js">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" height="38" alt="Svelte logo" title="Svelte">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" height="38" alt="Tailwind CSS logo" title="Tailwind CSS">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="38" alt="HTML5 logo" title="HTML5">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="38" alt="CSS3 logo" title="CSS3">
+
+### 🗄️ Backend & Databases
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="38" alt="Node.js logo" title="Node.js">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="38" alt="Express logo" title="Express">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" height="38" alt="Laravel logo" title="Laravel">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="38" alt="PostgreSQL logo" title="PostgreSQL">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="38" alt="SQLite logo" title="SQLite">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="38" alt="Redis logo" title="Redis">
+
+### ☁️ Cloud & DevOps
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="38" alt="Docker logo" title="Docker">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" height="38" alt="Kubernetes logo" title="Kubernetes">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="38" alt="Google Cloud logo" title="Google Cloud">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" height="38" alt="Firebase logo" title="Firebase">
+
+### 🖥️ Desktop
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" height="38" alt="Qt logo" title="Qt">
+
+<sub>QML · KDE Plasma 6 · Qt6 · Linux · GitHub Actions</sub>
 
 ---
 
