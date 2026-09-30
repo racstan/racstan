@@ -45,7 +45,7 @@ Turns a passive second brain into an **active intelligence partner**. The only O
 
 ### 📺 [OpenShow](https://github.com/racstan/openshow) — Audio-reactive Android TV screensaver
 [![Kotlin](https://img.shields.io/badge/Kotlin-7f52ff?style=flat-square&logo=kotlin&logoColor=white)](https://kotlinlang.org)
-[![GitHub](https://img.shields.io/github/last-commit/racstan/openshow?style=flat-square&color=0e75b6)](https://github.com/racstan/openshow)
+[![Android TV](https://img.shields.io/badge/Android_TV-3DDC84?style=flat-square&logo=android&logoColor=white)](https://developer.android.com/tv)
 
 Screensaver + music visualizer for Fire TV Sticks, Huawei TV sticks, and any Android TV device.
 
