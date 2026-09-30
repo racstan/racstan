@@ -1,0 +1,61 @@
+name: Metrics
+
+on:
+  # Regenerate daily so the profile never looks stale
+  schedule: [{ cron: "17 5 * * *" }]
+  workflow_dispatch:
+  push: { branches: ["main"], paths: [".github/workflows/metrics.yml"] }
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          # Output the rendered SVG into this repo (not a gist)
+          filename: profile/metrics.svg
+          # Commit straight to main on each run
+          output_action: commit
+          committer_branch: main
+          committer_message: "chore(metrics): regenerate metrics [skip ci]"
+          # Only render the plugins that earn their space on a profile page
+          plugin_base: enabled
+          plugin_languages: enabled
+          plugin_languages_limit: 8
+          plugin_languages_sections: used,recent
+          plugin_isocalendar: disabled
+          plugin_calendar: disabled
+          plugin_habits: enabled
+          plugin_habits_charts: false
+          plugin_habits_facts: true
+          plugin_habits_days: 30
+          plugin_topics: disabled
+          plugin_stars: disabled
+          plugin_licenses: disabled
+          plugin_stargazers: disabled
+          plugin_lines: disabled
+          plugin_contributors: disabled
+          plugin_followup: disabled
+          plugin_reactions: disabled
+          plugin_people: disabled
+          plugin_sponsors: disabled
+          plugin_sponsorships: disabled
+          plugin_repositories: enabled
+          plugin_repositories_featured: racstan/KDE-AI-Chat,racstan/obsidian-ai-scheduler,racstan/openshow,racstan/hastejev
+          plugin_repositories_order: desc
+          plugin_activity: disabled
+          plugin_code: disabled
+          plugin_gists: disabled
+          plugin_projects: disabled
+          plugin_skyline: disabled
+          plugin_achievements: disabled
+          plugin_notable: disabled
+          plugin_traffic: disabled
+          plugin_discussions: disabled
+          plugin_starlists: disabled
+          plugin_introduction: disabled
+          # Do not fail the whole run if one plugin has an API hiccup
+          plugins_errors_fatal: false
