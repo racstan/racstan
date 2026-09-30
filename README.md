@@ -13,10 +13,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/racstan"><img src="https://komarev.com/ghpvc/?username=racstan&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"></a>
   <a href="https://github.com/racstan?tab=repositories"><img src="https://img.shields.io/badge/repos-60%2B-007ec6?style=flat-square" alt="Repositories"></a>
   <a href="https://github.com/racstan"><img src="https://img.shields.io/badge/followers-4-007ec6?style=flat-square" alt="Followers"></a>
-  <a href="https://github.com/racstan/racstan"><img src="https://img.shields.io/badge/README-2023%20%E2%86%92%20fresh-2ea44f?style=flat-square" alt="README"></a>
+  <a href="https://github.com/racstan"><img src="https://img.shields.io/badge/KDE_Store-publisher-1c71d8?style=flat-square&logo=kde&logoColor=white" alt="KDE Store publisher"></a>
 </p>
 
 ---
