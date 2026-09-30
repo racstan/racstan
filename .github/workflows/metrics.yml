@@ -22,7 +22,6 @@ jobs:
           committer_branch: main
           committer_message: "chore(metrics): regenerate metrics [skip ci]"
           # Only render the plugins that earn their space on a profile page
-          plugin_base: enabled
           plugin_languages: enabled
           plugin_languages_limit: 8
           plugin_languages_sections: used,recent
