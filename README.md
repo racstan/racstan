@@ -8,7 +8,7 @@
 Native KDE Plasma 6 AI widget, published on the official [KDE Store](https://store.kde.org/p/2360152/). Cloud and fully offline local models, voice stack, background scheduler, persistent AI memory.
 
 ### 🧠 [AI Scheduler for Obsidian](https://github.com/racstan/obsidian-ai-scheduler)
-Autonomous background engine for Obsidian. 100% local-first, strict TypeScript, MIT licensed.
+Autonomous background engine for Obsidian. 100% local-first.
 
 ### 📺 [OpenShow](https://github.com/racstan/openshow)
 Audio-reactive Android TV screensaver. 18 visualizer effects, 60 FPS on low-end hardware.
