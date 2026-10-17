@@ -6,37 +6,46 @@
 
 <p align="center">
   <a href="https://store.kde.org/p/2360152/"><img alt="KDE Store — published widget" src="https://img.shields.io/badge/KDE%20Store-published%20widget-blue?style=for-the-badge&logo=kde&logoColor=white"></a>
-  <a href="https://pypi.org/project/hastejev/"><img alt="PyPI — hastejev" src="https://img.shields.io/badge/PyPI-hastejev-3775A9?style=for-the-badge&logo=pypi&logoColor=white"></a>
-  <a href="https://huggingface.co/noffy/hastejev"><img alt="Hugging Face — noffy/hastejev" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-noffy%2Fhastejev-yellow?style=for-the-badge"></a>
+  <a href="https://obsidian.md/plugins?id=ai-scheduler"><img alt="Obsidian — published plugin" src="https://img.shields.io/badge/Obsidian-published%20plugin-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white"></a>
   <a href="https://github.com/racstan?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repositories-70%2B-2ea44f?style=for-the-badge"></a>
   <a href="mailto:asthanarachit@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-asthanarachit%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
 ## 🚀 Featured work
 
-### 🐧 KDE AI Chat — a real AI assistant in your desktop panel
+### 🐧 KDE AI Chat — a full AI workstation in your desktop panel
 
 *QML + C++ · GPL-2.0+ · published on the [KDE Store](https://store.kde.org/p/2360152/) · [Repository](https://github.com/racstan/KDE-AI-Chat)*
 
-- **Cloud or fully offline** — 15+ providers out of the box (OpenAI, Claude, Gemini, DeepSeek, Groq, OpenRouter, Mistral) plus local models through Ollama, LM Studio, llama.cpp and LiteLLM.
-- **Local voice mode (beta)** — Whisper speech-to-text and Kokoro text-to-speech run on your own machine, CPU or CUDA-accelerated. Highlight a paragraph and only that gets read aloud.
-- **Background task scheduler** — recurring prompts via systemd: cron-style schedules for daily briefings, automated checks and reminders.
+A native KDE Plasma 6 widget that turns your panel into a complete AI assistant — cloud or fully offline — with voice, memory, scheduling and developer tooling built in rather than bolted on.
+
+- **Cloud or fully offline** — 15+ providers out of the box (OpenAI, Claude, Gemini, DeepSeek, Groq, OpenRouter, Mistral) plus local models through Ollama, LM Studio, llama.cpp and LiteLLM. Providers load their model lists dynamically (NVIDIA NIM pulls in 118 models on connect), and anything else can be wired in through the built-in OpenCode bridge.
+- **Local voice mode (beta)** — talk hands-free with Whisper speech-to-text and Kokoro text-to-speech running on your own machine, CPU or CUDA-accelerated. Highlight any passage and only that gets read aloud, with a global stop button to interrupt.
+- **Background task scheduler** — recurring prompts through systemd user services: cron-style schedules for daily briefings, rate checks and automated code reviews — plus a live resource monitor with per-process kill buttons.
 - **Persistent AI memory** — remembers facts about you across sessions, with a prompt-context preview so you always see exactly what gets sent.
-- **OpenCode developer bridge** — run code, search the web and drive agent tasks straight from your panel.
-- **Built to be trusted** — API keys encrypted in KWallet, drag-and-drop for PDFs/images/DOCX/CSV, chat export to Markdown or text, message rewind, zero qmllint warnings.
+- **OpenCode developer bridge** — run code, search the web and drive agent tasks straight from your panel, with custom endpoints and providers.
+- **Drag & drop everything** — images, PDFs, CSVs, Word documents and text files; a file alone is a valid message, and heavy processing runs in background threads so the desktop never freezes.
+- **Built for daily use** — reusable prompt templates (`/news`, `/review`…), quick-jump navigation through long threads, message rewind (edit an older question and the conversation restarts from there), chat export to Markdown or text, resizable popup, auto-saving settings.
+- **Trusted handling** — API keys encrypted in KWallet (with a safe fallback), defensive DBus and config-path handling to prevent shell-injection issues, and a codebase that passes `qmllint` with zero warnings.
+- **Installs in seconds** — from the widget browser, a `.plasmoid` via `kpackagetool6`, or from source; optional system tools (poppler, pandoc) are detected and explained in-chat instead of failing silently.
 
 <p align="center"><img src="https://raw.githubusercontent.com/racstan/KDE-AI-Chat/master/.github/assets/image2.png" alt="KDE AI Chat reading a selected passage aloud" width="720"></p>
 
 ### 🧠 AI Scheduler for Obsidian — an autonomous engine for your vault
 
-*100% local-first · TypeScript · [Repository](https://github.com/racstan/obsidian-ai-scheduler) · available in the Obsidian community plugin store*
+*100% local-first · TypeScript · [published in the Obsidian community plugin store](https://obsidian.md/plugins?id=ai-scheduler) · [Repository](https://github.com/racstan/obsidian-ai-scheduler)*
 
-- **Describe a task in plain English** — "every Friday, summarize this week's project notes" — the built-in planner turns it into a fully configured scheduled job.
-- **Every schedule you'd want** — daily, weekly, cron, intervals, one-shot, vault-change triggers, or chained after another task.
-- **Drives the AI you already use** — works with Claudian, Oh My Claudian and Obsidian Copilot; it owns the scheduling, they own the models.
-- **Periodic reviews** — gathers everything that changed since the last run and writes a structured report (progress, open loops, next steps) back into your vault.
-- **Real task plumbing** — `{{date}}` / `{{changed_notes}}` variables, retries, timeouts, run history, skip-if-unchanged, quiet hours.
-- **Output where you want it** — new note, replace, append, or today's daily note; vault-synced schedule notes, `.ics` calendar export, starter templates from morning plans to flashcards.
+Describe a task in plain English, give it a cadence, and let your vault run itself — summaries, reviews and reports appear while you work or sleep.
+
+- **Describe it in plain English** — the built-in AI planner turns "every Friday afternoon, summarize this week's project notes" into a fully configured job; attach any note or folder with `@`.
+- **Every schedule type you'll ever need** — daily, weekly, every N days/weeks/months, intervals, full 5-field cron, multi-rule weekdays, one-shot, vault-change triggers (with a cooldown) and chained tasks that run after another finishes — each with an optional max-iterations cap.
+- **Drives the AI you already use** — works with Claudian, Oh My Claudian and Obsidian Copilot 3.x/4.x; the plugin owns scheduling and execution, your existing setup owns the models and keys. No extra accounts, no telemetry.
+- **Periodic reviews** — gathers everything you changed since the last run and writes a structured report (progress, open loops, recommendations) into your vault.
+- **Real task plumbing** — `{{date}}`, `{{changed_notes}}` (up to 50 links), `{{last_run}}`, `{{previous_result}}` and more variables; retries (up to 5), run time limits, "only run when something changed", a 20-run history per task, quiet hours and pause (1 h / 4 h / tomorrow / until resumed).
+- **Results land where you want** — a new note per run, replace one note, append to one note (optionally under a heading), or today's daily note; schedule notes stay vault-synced as Markdown with YAML frontmatter, and everything exports/imports as JSON.
+- **A real dashboard and calendar** — month, agenda and day views of upcoming runs; live timers for running tasks, an activity log, tag search and sorting, trash & restore, plus an `.ics` feed you can subscribe to in Google, Outlook or Apple Calendar.
+- **Ships with 8 starter templates** — morning plan, daily summary, weekly review, inbox triage, action items, flashcards, link suggestions, monthly reflection — each opens pre-filled in the task editor.
+- **Built like real software** — a dependency-free, DST-safe cron engine tested against edge cases, a 15-second dispatcher, strict TypeScript, ESLint (Obsidian ruleset) and a smoke test against a mocked Obsidian API.
 
 <p align="center"><img src="https://raw.githubusercontent.com/racstan/obsidian-ai-scheduler/main/docs/media/demo.gif" alt="Planning a task in plain English: AI Scheduler creates and schedules it" width="720"></p>
 
@@ -44,30 +53,29 @@
 
 *Laravel + agentic AI · under active development · [Repository](https://github.com/racstan/ForgedEdgeAlpha)*
 
-- **One place for trading** — a journal, research workspace and personal coach built for forex and prop traders.
-- **ForgeAI inside** — an agent layer with an intent registry, 29 typed domain commands, a multi-agent supervisor and streaming outputs behind a gateway with provider fallback.
+A journal, research workspace and personal coach for forex and prop traders — with an in-house agent platform (ForgeAI) doing the heavy lifting.
+
+- **One place for trading** — journaling, research and coaching in a single workspace built for forex and prop-firm workflows.
+- **ForgeAI inside** — an agent layer with an intent registry, 29 typed domain commands, a multi-agent supervisor and streaming responses, behind a gateway with provider capability fallback.
 - **Agentic UI done properly** — @mention agents, batch mutation cards, and a 15-minute undo window on everything the AI changes.
-- **Operator tooling** — `fe:*` / `fe:ai:*` CLI with JSON scripting for automation and testing.
-- **Built like a product** — ToolGate permission budgeting, durable workflows, PHPStan + Pint CI and a hybrid PHP/Vitest test suite.
+- **Three AI modes** — drive it straight from raw APIs, hand it to an OpenCode agent, or run it through the Pi agent integration — one doc per mode in the repo.
+- **Operator tooling** — a `fe:*` / `fe:ai:*` CLI with AI mode/model switching, parameter tuning and JSON scripting, plus one-shot dev scripts for Windows, Linux and containers (Docker + Compose included).
+- **Security & durability** — ToolGate permission budgeting, durable workflows that survive restarts, and a hybrid PHP/Vitest test suite enforced with PHPStan and Pint in CI.
+- **Engineered with receipts** — a versioned docs set (architecture spec, CLI reference, QA checklists, weekly progress audits) that tracks every claim to a commit — and states its gaps honestly: the alpha is not release-certified yet.
 - **Next generation in progress** — a free-first, self-hostable rebuild (FastAPI + React) is already underway.
-
-### ⚡ Haste Jev — a System-1 decision engine, not another chatbot
-
-*Apache-2.0 · open weights on [Hugging Face](https://huggingface.co/noffy/hastejev) & [PyPI](https://pypi.org/project/hastejev/) · [Repository](https://github.com/racstan/hastejev)*
-
-- **Decisions instead of prose** — typed outputs (`choice`, `score`, `noul`, `range_eval`) for agent routing, tool/MCP selection, model cascades, intent classification and pre-flight guardrails.
-- **Fast by architecture** — a single parallel forward pass over a typed state, no autoregressive decoding; models from 98k to 20m parameters run on CPU and edge devices.
-- **0% option-order bias (verified)** — PICA scores candidates independently, so decisions don't flip when the options get reordered.
-- **Auditable by design** — ships `verify_claims.py` and a public audit trail; unreproducible historical numbers were retracted rather than kept.
 
 ### 📺 OpenShow — a screensaver that turns an idle TV into a light show
 
 *Kotlin · Android 5.0+ · built for TV sticks · [Repository](https://github.com/racstan/openshow)*
 
-- **18 audio-reactive visualizers** — Yantra, Aurora, Lattice, FlowField and friends, rendered with OpenGL ES and tuned to hold 60 FPS even on cheap TV sticks.
-- **Photo slideshow from anywhere** — Google Drive, OneDrive, Dropbox, Immich, Nextcloud, Synology NAS or local storage, with a 200-image offline cache.
-- **The details** — Ken Burns motion, six transition styles, EXIF auto-orientation, clock + weather overlays, active-hours scheduling.
-- **Feels native** — remote-control shortcuts, genre-aware auto-switching, in-app updates with stable/dev channels.
+An Android TV screensaver that turns an idle screen into an audio-reactive light show or a photo gallery — tuned to run on the cheap TV sticks everyone actually owns.
+
+- **18 audio-reactive visualizers** — Yantra, Aurora, Lattice, Mycelium, FlowField, Waterfall and friends, rendered in OpenGL ES 2.0 with a two-pass bloom pipeline; beat detection adapts to the genre (electronic/rock/classical frequency weighting) and the effects hold 60 FPS on low-end hardware.
+- **Photos from anywhere** — Google Drive and OneDrive via OAuth device flow (no Google Play Services needed, which is why it works on Huawei), Dropbox, self-hosted Immich, Nextcloud over WebDAV, Synology NAS or local storage — all sources can run at once and merge into one shuffled stream.
+- **Survives bad Wi-Fi** — a 200-image / 300 MB offline cache takes over automatically whenever a source is unreachable.
+- **The details matter** — Ken Burns motion that always settles centered, six transitions, EXIF auto-orientation, clock + weather overlays, active-hours scheduling, and a visualizer you can run semi-transparent over your photos.
+- **Feels native** — registers as a system Dream Service, remote-control shortcuts while running (←/→ effect, ↑/↓ intensity), preview mode from settings, and an in-app updater with stable/dev channels.
+- **Privacy-first** — credentials live on-device only; nothing is sent anywhere except the services you configure (plus weather and update checks if enabled).
 
 ## 🧰 What I work with
 
@@ -110,4 +118,4 @@
 
 Always happy to talk about AI systems, local-first software, or anything else on this page.
 
-📬 [asthanarachit@gmail.com](mailto:asthanarachit@gmail.com) · 🐙 [GitHub](https://github.com/racstan?tab=repositories) · 🐧 [KDE Store](https://store.kde.org/p/2360152/) · 🤗 [Hugging Face](https://huggingface.co/noffy/hastejev)
+📬 [asthanarachit@gmail.com](mailto:asthanarachit@gmail.com) · 🐙 [GitHub](https://github.com/racstan?tab=repositories) · 🐧 [KDE Store](https://store.kde.org/p/2360152/) · 🤗 [Hugging Face](https://huggingface.co/noffy)
