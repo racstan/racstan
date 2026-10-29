@@ -24,13 +24,13 @@ I build AI software end to end, from the model calls and agent plumbing to the a
 
 ## Featured projects
 
-### KDE AI Chat
+### [KDE AI Chat](https://github.com/racstan/KDE-AI-Chat)
 
 <a href="https://store.kde.org/p/2360152/"><img alt="KDE Store" src="https://img.shields.io/badge/published-KDE%20Store-1D99F3?style=flat-square&logo=kde&logoColor=white"></a>
 <a href="https://github.com/racstan/KDE-AI-Chat/releases"><img alt="Release" src="https://img.shields.io/github/v/release/racstan/KDE-AI-Chat?style=flat-square"></a>
 <img alt="Downloads" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fracstan%2Fracstan%2Fmain%2Fprofile%2Fdownloads%2Fkde-ai-chat.json&style=flat-square">
 <img alt="QML" src="https://img.shields.io/badge/QML%20%2F%20Qt-Plasma%206-41CD52?style=flat-square&logo=qt&logoColor=white">
-· [Repository](https://github.com/racstan/KDE-AI-Chat) · [13-min tour](https://youtu.be/SnkKFCN_Jkg)
+· [13-min tour](https://youtu.be/SnkKFCN_Jkg)
 
 A chat assistant in the KDE Plasma 6 panel. It talks to cloud providers or to models on your own computer, and can hand a chat to the OpenCode or Pi coding agent. API keys are kept in KDE Wallet, and chats stay in private files on your machine.
 
@@ -50,13 +50,12 @@ A chat assistant in the KDE Plasma 6 panel. It talks to cloud providers or to mo
 
 </details>
 
-### AI Scheduler for Obsidian
+### [AI Scheduler for Obsidian](https://github.com/racstan/obsidian-ai-scheduler)
 
 <a href="https://obsidian.md/plugins?id=ai-scheduler"><img alt="Obsidian" src="https://img.shields.io/badge/published-Obsidian%20plugins-7C3AED?style=flat-square&logo=obsidian&logoColor=white"></a>
 <a href="https://github.com/racstan/obsidian-ai-scheduler/releases"><img alt="Release" src="https://img.shields.io/github/v/release/racstan/obsidian-ai-scheduler?style=flat-square"></a>
 <img alt="Downloads" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fobsidianmd%2Fobsidian-releases%2Fmaster%2Fcommunity-plugin-stats.json&query=%24%5B%22ai-scheduler%22%5D.downloads&label=downloads&color=brightgreen&style=flat-square">
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-· [Repository](https://github.com/racstan/obsidian-ai-scheduler)
 
 Runs AI tasks in your Obsidian vault on a schedule, at a set time, or when notes change. You describe a task once in plain English and it plans, schedules and runs it, writing the result into your vault. It drives the AI plugin you already use (Claudian, Oh My Claudian or Copilot) and handles only scheduling and execution.
 
@@ -76,13 +75,13 @@ Runs AI tasks in your Obsidian vault on a schedule, at a set time, or when notes
 
 </details>
 
-### Progressor
+### [Progressor](https://github.com/racstan/progressor-mcp)
 
 <a href="https://www.npmjs.com/package/progressor-mcp"><img alt="npm" src="https://img.shields.io/npm/v/progressor-mcp?style=flat-square&logo=npm&label=npm"></a>
 <img alt="Downloads" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fracstan%2Fracstan%2Fmain%2Fprofile%2Fdownloads%2Fprogressor-mcp.json&style=flat-square">
 <img alt="MCP Registry" src="https://img.shields.io/badge/listed-MCP%20Registry-111111?style=flat-square">
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-· [Repository](https://github.com/racstan/progressor-mcp) · [4-min video](https://youtu.be/7jDyJZvDMag)
+· [4-min video](https://youtu.be/7jDyJZvDMag)
 
 An MCP server that keeps an AI coding agent on its plan. The agent writes its goal and steps into your project folder and keeps them up to date. After a chat's context is compressed, in a new chat, or even in a different AI app, it reads the plan and carries on where the work stopped. A local dashboard shows the same plan live.
 
@@ -100,13 +99,12 @@ An MCP server that keeps an AI coding agent on its plan. The agent writes its go
 
 </details>
 
-### antigravity-updater
+### [antigravity-updater](https://github.com/racstan/antigravity-updater)
 
 <a href="https://www.npmjs.com/package/antigravity-updater"><img alt="npm" src="https://img.shields.io/npm/v/antigravity-updater?style=flat-square&logo=npm&label=npm"></a>
 <img alt="Downloads" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fracstan%2Fracstan%2Fmain%2Fprofile%2Fdownloads%2Fantigravity-updater.json&style=flat-square">
 <img alt="Linux" src="https://img.shields.io/badge/Linux-x64%20%7C%20arm64-FCC624?style=flat-square&logo=linux&logoColor=black">
 <img alt="No telemetry" src="https://img.shields.io/badge/telemetry-none-brightgreen?style=flat-square">
-· [Repository](https://github.com/racstan/antigravity-updater)
 
 Google Antigravity has no built-in updater on Linux. `npx antigravity-updater` finds your installs, checks the latest IDE and `agy` CLI versions, backs up the current IDE, closes it safely, and installs the update.
 
