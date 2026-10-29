@@ -236,5 +236,6 @@ Tutorials and demos of my projects go up on [YouTube](https://www.youtube.com/@r
   <a href="https://www.youtube.com/@rastanid"><img alt="YouTube" src="https://img.shields.io/badge/YouTube-@rastanid-FF0000?style=flat-square&logo=youtube&logoColor=white"></a>
   <a href="https://linktr.ee/rachitasthana"><img alt="Linktree" src="https://img.shields.io/badge/Linktree-rachitasthana-43E55E?style=flat-square&logo=linktree&logoColor=black"></a>
   <a href="https://huggingface.co/noffy"><img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-noffy-FFD21E?style=flat-square&logo=huggingface&logoColor=black"></a>
+  <a href="https://github.com/sponsors/racstan"><img alt="Sponsor on GitHub" src="https://img.shields.io/badge/Sponsor-racstan-EA4AAA?style=flat-square&logo=githubsponsors&logoColor=white"></a>
   <a href="https://buymeacoffee.com/rachitasthana"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=flat-square&logo=buymeacoffee&logoColor=black"></a>
 </p>
