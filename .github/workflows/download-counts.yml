@@ -1,0 +1,25 @@
+name: Download counts
+
+on:
+  # Refresh twice a month (1st and 15th) to keep the download badges current
+  schedule: [{ cron: "37 4 1,15 * *" }]
+  workflow_dispatch:
+
+jobs:
+  downloads:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update profile/downloads
+        run: .github/scripts/download-counts.sh
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/downloads
+          git diff --cached --quiet || git commit -m "chore(downloads): update download counts [skip ci]"
+          git push
