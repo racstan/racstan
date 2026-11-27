@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Writes shields.io endpoint files with total download counts to profile/downloads/.
-# A source that fails keeps its previous file, so a badge never breaks.
+# Writes shields.io endpoint files with lifetime download counts to profile/downloads/,
+# and keeps the Progressor video link in README.md in step with the progressor-mcp README.
+# A source that fails keeps its previous value, so a badge or link never breaks.
 set -uo pipefail
 out=profile/downloads
 mkdir -p "$out"
@@ -15,6 +16,9 @@ write() { # name total
     echo "$1: no count returned; keeping the previous value"
   fi
 }
+
+# Prints the number only if it is a whole number; otherwise fails, so a total is never built from a missing part.
+num() { [[ "$1" =~ ^[0-9]+$ ]] && echo "$1"; }
 
 # KDE Store: add up every file version of KDE AI Chat.
 write kde-ai-chat "$(curl -fsS --retry 3 https://www.opendesktop.org/p/2360152/loadFiles \
@@ -35,6 +39,36 @@ npm_total() {
   echo "$total"
 }
 
-for pkg in progressor-mcp antigravity-updater didilang; do
+# Docker Hub: lifetime pulls of a repository.
+dockerhub_pulls() { num "$(curl -fsS --retry 3 "https://hub.docker.com/v2/repositories/$1/" | jq '.pull_count // empty')"; }
+
+# GitHub Container Registry: no API gives the count, so read "Total downloads" from the package page.
+ghcr_downloads() { # owner/repo package
+  num "$(curl -fsSL --retry 3 "https://github.com/$1/pkgs/container/$2" \
+    | grep -A2 'Total downloads' | grep -oE 'title="[0-9]+"' | head -1 | tr -dc '0-9')"
+}
+
+for pkg in antigravity-updater didilang; do
   write "$pkg" "$(npm_total "$pkg")"
 done
+
+# Progressor ships on npm and as a Docker image on both GHCR and Docker Hub; the badge counts all three.
+if p_npm=$(num "$(npm_total progressor-mcp)") \
+  && p_hub=$(dockerhub_pulls rachitasthana/progressor-mcp) \
+  && p_ghcr=$(ghcr_downloads racstan/progressor-mcp progressor-mcp); then
+  echo "progressor-mcp parts: npm $p_npm, Docker Hub $p_hub, GHCR $p_ghcr"
+  write progressor-mcp $((p_npm + p_hub + p_ghcr))
+else
+  echo "progressor-mcp: a source failed; keeping the previous value"
+fi
+
+# Progressor video: take the YouTube link and length from the progressor-mcp README.
+readme=$(curl -fsS --retry 3 https://raw.githubusercontent.com/racstan/progressor-mcp/main/README.md)
+vid=$(grep -oE 'youtu\.be/[A-Za-z0-9_-]{11}' <<<"$readme" | head -1 | cut -d/ -f2)
+mins=$(grep -oE 'Watch the [0-9]+-minute video' <<<"$readme" | head -1 | tr -dc '0-9')
+if [ -n "$vid" ] && [ -n "$mins" ]; then
+  perl -0pi -e "s{\\[[0-9]+-min video\\]\\(https://youtu\\.be/[A-Za-z0-9_-]+\\)}{[$mins-min video](https://youtu.be/$vid)}" README.md
+  echo "progressor video: $mins min, $vid"
+else
+  echo "progressor video: not found; keeping the current link"
+fi

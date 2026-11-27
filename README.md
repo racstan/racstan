@@ -81,7 +81,7 @@ Runs AI tasks in your Obsidian vault on a schedule, at a set time, or when notes
 <img alt="Downloads" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fracstan%2Fracstan%2Fmain%2Fprofile%2Fdownloads%2Fprogressor-mcp.json&style=flat-square">
 <img alt="MCP Registry" src="https://img.shields.io/badge/listed-MCP%20Registry-111111?style=flat-square">
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-· [4-min video](https://youtu.be/7jDyJZvDMag)
+· [6-min video](https://youtu.be/NwP0ZsM-MVI)
 
 An MCP server that keeps an AI coding agent on its plan. The agent writes its goal and steps into your project folder and keeps them up to date. After a chat's context is compressed, in a new chat, or even in a different AI app, it reads the plan and carries on where the work stopped. A local dashboard shows the same plan live.
 
