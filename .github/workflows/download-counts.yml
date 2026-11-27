@@ -1,8 +1,8 @@
 name: Download counts
 
 on:
-  # Refresh once a week (Mondays) so the lifetime download badges and the Progressor video link stay current
-  schedule: [{ cron: "37 4 * * 1" }]
+  # Refresh every day so the lifetime download badges and the Progressor video link stay current
+  schedule: [{ cron: "37 4 * * *" }]
   workflow_dispatch:
 
 jobs:
